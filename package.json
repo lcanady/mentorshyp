@@ -8,8 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.16",
+    "@next/mdx": "^9.5.3",
+    "@theme-ui/preset-future": "^0.3.0",
+    "@theme-ui/presets": "^0.3.0",
+    "firebase": "^7.20.0",
+    "firebase-tools": "^8.10.0",
     "next": "9.5.3",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "sass": "^1.26.10",
+    "theme-ui": "^0.3.1"
   }
 }
