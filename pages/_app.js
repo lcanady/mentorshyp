@@ -1,10 +1,13 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import {jsx} from 'theme-ui'
 // noinspection ES6CheckImport
-import { ThemeProvider } from 'theme-ui'
+import {ThemeProvider} from 'theme-ui'
 import theme from '../theme'
 import {useEffect} from 'react'
 import firebase from '../firebase.config'
+import Nav from '../src/components/Nav'
+import Sidebar from '../src/components/Sidebar'
+import Main from '../src/components/Main'
 
 export default function MyApp({Component, pageProps}) {
 
@@ -13,18 +16,33 @@ export default function MyApp({Component, pageProps}) {
         const createMsg =
             async () => {
               await firebase.firestore().collection('test').add({
-                channel: 'channel',
-                msg: 'msg'
+                channel: 'channel2',
+                msg: 'msg2'
               })
-
             }
-        createMsg()
+        createMsg().then(results => results)
       }, []
   )
 
   return (
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <div sx={{variant: 'layout.root'}}>
+
+          <header sx={{variant: 'layout.nav'}}>
+            <Nav/>
+          </header>
+
+          <section sx={{variant: 'layout.sidebar'}}>
+            <Sidebar/>
+          </section>
+
+          <section sx={{variant: 'layout.main'}}>
+            <Main/>
+          </section>
+
+          <Component {...pageProps} />
+          
+        </div>
       </ThemeProvider>
   )
 }
