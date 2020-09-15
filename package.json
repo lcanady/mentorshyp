@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.16",
+    "@mdx-js/react": "^1.6.17",
     "@next/mdx": "^9.5.3",
     "@theme-ui/preset-future": "^0.3.0",
     "@theme-ui/presets": "^0.3.0",

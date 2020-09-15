@@ -3,7 +3,7 @@ import {jsx} from 'theme-ui'
 
 export default function Sidebar() {
   return (
-      // <div sx={{variant: 'layout.dashboard'}}>
+      // <div sx={{variant: 'layout.root'}}>
       //   <div sx={{variant: 'layout.sidebar'}}>
           <aside>
             <ul sx={{variant: 'components.sidebar'}}>

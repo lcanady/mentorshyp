@@ -44,6 +44,10 @@ const theme = {
             // color: 'modes.dark.text',
             a: {
                 color: 'modes.dark.text',
+                textDecoration: 'none',
+                '&:hover': {
+                    textDecoration: 'underline',
+                }
             },
             m: 0,
             p: 0,
@@ -75,6 +79,7 @@ const theme = {
             minWidth: 320,
         }
     },
+    breakpoints: ['40em', '64em', '80em'],
     styles: {
         ...future.styles,
     }

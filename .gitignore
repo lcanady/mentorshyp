@@ -69,4 +69,20 @@ _UpgradeReport_Files/
 
 Thumbs.db
 Desktop.ini
-.DS_Store
+
+/db.rules.json
+.firebaserc
+database.rules.json
+firebase-debug.log
+firebase.json
+firestore.indexes.json
+firestore.rules
+functions/.gitignore
+functions/package-lock.json
+functions/package.json
+functions/src/
+functions/tsconfig.json
+functions/tslint.json
+next-env.d.ts
+public/
+storage.rules
