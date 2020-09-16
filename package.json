@@ -14,6 +14,8 @@
     "@theme-ui/preset-future": "^0.3.0",
     "@theme-ui/presets": "^0.3.0",
     "firebase": "^7.20.0",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
     "firebase-tools": "^8.10.0",
     "next": "9.5.3",
     "react": "16.13.1",
@@ -22,8 +24,10 @@
     "theme-ui": "^0.3.1"
   },
   "devDependencies": {
+    "dotenv-load": "^2.0.0",
     "@types/node": "^14.10.1",
     "@types/react": "^16.9.49",
+    "next-env": "^1.1.1",
     "typescript": "^4.0.2"
   }
 }

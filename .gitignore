@@ -33,7 +33,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-
 dist/
 .cache/
 logs/
@@ -71,6 +70,7 @@ Thumbs.db
 Desktop.ini
 
 /db.rules.json
+
 .firebaserc
 database.rules.json
 firebase-debug.log
