@@ -5,10 +5,6 @@ const {config, https: {onRequest}} = require('firebase-functions')
 
 admin.initializeApp(config().firebase)
 
-// exports.helloWorld = functions.https.onRequest((req, res) => {
-//   // TODO
-// });
-
 exports.helloWorld = onRequest((req, res) => {
-  res.status(200).send('Hello, World!')
+  res.status(200).send('Sup Bitches!!!')
 })
