@@ -1,5 +1,7 @@
+/** @jsx jsx */
+import {jsx} from 'theme-ui'
 import Head from 'next/head'
-import React from 'react'
+
 
 export function Layout({children, pageTitle, description}) {
   return (
