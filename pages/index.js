@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import {jsx} from 'theme-ui'
 import Nav from '../src/components/shared/Nav'
-import {Layout} from '../src/components/blog/Layout'
 import Video from '../src/components/user/dashboard/main/Video'
 import Channels from '../src/components/user/dashboard/sidebar/Channels'
 import Controls from '../src/components/user/dashboard/sidebar/Controls'
@@ -23,7 +22,6 @@ export default function Dashboard() {
             <Video/>
           </main>
         </div>
-        <Layout pageTitle="Blog" description="Mentorshyp Blog"/>
       </>
   )
 }
