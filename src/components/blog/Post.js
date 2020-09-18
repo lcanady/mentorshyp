@@ -1,19 +1,21 @@
 import Link from 'next/link'
-import { HeadPost } from './HeadPost'
+import {HeadPost} from './HeadPost'
 import React from 'react'
 
-export const Post = ({ post }) => {
-  const {
-    link,
-    module: { meta },
-  } = post
+export const Post = ({post}) => {
+    const {
+        link,
+        module: {meta},
+    } = post
 
-  return (
-      <article>
-        <HeadPost meta={meta} />
-        <Link href={'/blog' + link}>
-          <a>Read more →</a>
-        </Link>
-      </article>
-  )
+    return (
+        <>
+            <article>
+                <HeadPost meta={meta}/>
+                <Link href={'/blog' + link}>
+                    <a>Read more →</a>
+                </Link>
+            </article>
+        </>
+    )
 }
