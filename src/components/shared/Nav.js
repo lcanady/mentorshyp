@@ -11,7 +11,7 @@ export default function Nav() {
       //   <div sx={{variant: 'layout.nav'}}>
       <nav sx={{variant: 'components.nav'}}>
         <Link href="/welcome">
-          <a>Home</a>
+          <a sx={{ml:2}}>Home</a>
         </Link>
         <Link href="/">
           <a>Dashboard</a>

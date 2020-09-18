@@ -23,10 +23,12 @@ const theme = {
         nav: {
             gridColumnStart: '1',
             gridColumnEnd: '3',
+            // height: '5vh',
         },
         sidebar: {
             gridColumnStart: '1',
             gridColumnEnd: '2',
+
         },
         video: {
             gridColumnStart: '2',
@@ -36,12 +38,13 @@ const theme = {
     },
     components: {
         nav: {
+            height: '5vh',
             fontSize: [null, 2, 3, 4],
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'space-between',
             alignItems: 'center',
-            minHeight: '5vh',
+
             fontWeight: 'bold',
             cursor: 'pointer',
             fontFamily: 'body',
@@ -53,7 +56,6 @@ const theme = {
                     textDecoration: 'underline',
                 }
             },
-            p: 2,
         },
         search: {
             justifyContent: 'center',
@@ -65,6 +67,7 @@ const theme = {
             input: {
                 // outline: 'none',
                 borderRadius: '.25rem',
+                height:30,
                 // pl: '1rem',
                 // pr: '1rem',
 
@@ -83,6 +86,12 @@ const theme = {
             },
             button: {
                 borderRadius: '0 .25rem .25rem 0',
+               pt:'.25rem',
+                pr:'.5rem',
+                pl:'.5rem', // mb:'.5rem',
+                height:'80%',
+                mr:2,
+                fontSize: [1,2,3],
                 bg: 'modes.dark.secondary',
                 color: 'text',
                 boxShadow: '0.025rem 0.05rem 0.25rem black',
@@ -96,43 +105,43 @@ const theme = {
 
         },
         sidebar: {
+            height: '95vh',
+            bg: 'modes.dark.background',
+            opacity: '90%',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
             channels: {
-                opacity: '90%',
                 fontSize: [1, 2, 3, 4],
-                display: 'flex',
                 flexDirection: 'column',
                 flexGrow: 1,
-                flexBasis: 'sidebar',
-                bg: 'modes.dark.background',
+                flexBasis: 'auto',
                 color: 'modes.dark.text',
                 fontWeight: '500',
                 // textShadow: '.5px .5px 1px black',
                 listStyleType: 'none',
-                minHeight: '42.5vh',
-                minWidth: '10vw',
-                m: 0,
-                pl: 3,
-                border: '.1rem solid black',
+                // minHeight: '42.5vh',
+                // minWidth: '10vw',
+                // m: 0,
+                pl: 2,
+                // border: '.1rem solid black',
             },
             controls: {
-                bg: 'modes.dark.background',
-                opacity: '90%',
-                m: 'auto',
-                minHeight: '42.5vh',
-                border: '.1rem solid black',
+                // m: 'auto',
+                // minHeight: '45.5vh',
+                // height: '40vh',
+                // border: '.1rem solid black',
+
                 plusSign: {
-                    display: 'flex',
                     justifyContent: 'center',
-                    mt: '8rem',
+                    mb: '5rem',
                     logo: {
                         fontSize: 'calc(48px + 46 * ((100vw - 368px) / 800))',
                         color: 'modes.dark.secondary',
-                        opacity: '100%',
                     }
                 },
                 preferences: {
                     fontSize: [null, 2, 3],
-                    display: 'flex',
                     justifyContent: 'flex-end',
                     pr: '.5rem',
                     bg: 'modes.dark.secondary',

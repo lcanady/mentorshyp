@@ -5,16 +5,6 @@ import {Layout} from '../src/components/blog/Layout'
 import Video from '../src/components/user/dashboard/main/Video'
 import Channels from '../src/components/user/dashboard/sidebar/Channels'
 import Controls from '../src/components/user/dashboard/sidebar/Controls'
-import Search from '../src/components/shared/Search'
-
-// import Head from 'next/head'
-
-// import the library
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-
-// import your icons
-// import {faSearch} from '@fortawesome/pro-duotone-svg-icons'
 
 export default function Dashboard() {
   return (
@@ -23,10 +13,12 @@ export default function Dashboard() {
           <header sx={{variant: 'layout.nav'}}>
             <Nav/>
           </header>
-          <section sx={{variant: 'layout.sidebar'}}>
-            <Channels/>
-            <Controls/>
-          </section>
+          <aside sx={{variant: 'layout.sidebar'}}>
+            <div sx={{variant: 'components.sidebar'}}>
+              <Channels/>
+              <Controls/>
+            </div>
+          </aside>
           <main sx={{variant: 'layout.video'}}>
             <Video/>
           </main>
