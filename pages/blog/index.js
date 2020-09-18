@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import {jsx} from 'theme-ui'
 import {Post} from '../../src/components/blog/Post'
-import {posts} from '../../src/getAllPosts'
+import {posts} from '../../src/functions/getAllPosts'
 import Nav from '../../src/components/shared/Nav'
 
 

@@ -10,5 +10,5 @@ function importAll(r) {
 
 export const posts = importAll(
     // @ts-ignore
-    require.context("../pages/blog", true, /\.mdx$/)
+    require.context("../../pages/blog", true, /\.mdx$/)
 );

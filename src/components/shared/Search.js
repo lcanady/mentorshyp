@@ -1,17 +1,21 @@
 /** @jsx jsx */
 import {jsx} from 'theme-ui'
-
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-
-// import your icons
 import {faSearch} from '@fortawesome/pro-duotone-svg-icons'
-import {Flex} from '@theme-ui/components'
+import {Button, Flex, Input} from '@theme-ui/components'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export default function Search() {
   return (
       <>
         <Flex sx={{variant: 'components.search'}}>
-          <FontAwesomeIcon icon={faSearch} />
+          <div>
+            <Input type={'search'} sx={{variant: 'components.search.input'}}
+                   placeholder={'🔎'}
+            />
+          </div>
+          {/*<Button sx={{variant: 'components.search.button', pt:'.5rem', pb:'.5rem'}}>*/}
+          {/*  Search*/}
+          {/*</Button>*/}
         </Flex>
       </>
   )
