@@ -1,57 +1,19 @@
-import React from 'react'
+/** @jsx jsx */
+import {jsx} from 'theme-ui'
 
 export const HeadPost = ({meta, isBlogPost}) => {
-    return (
-        <>
-            <h1 className={isBlogPost ? 'great-title' : null}>{meta.title}</h1>
-            <div className='details'>
-                {
-                    isBlogPost ? null : <p>{meta.description}</p>
-                }
-                <span>{meta.date}</span>
-                <span role='img' aria-label='one coffee'>
+  return (
+      <div sx={{p:2}}>
+        <h1 className={isBlogPost ? 'title' : null}>{meta.title}</h1>
+        <div className='details'>
+          {
+            isBlogPost ? null : <p>{meta.description}</p>
+          }
+          <span>{meta.date}</span>
+          <span>
         ☕ {meta.readTime + ' min read'}
       </span>
-            </div>
-        </>
-    )
-}
-//todo fix styles
-{/*<style jsx>*/
-}
-{/*  {`*/
-}
-{/*  h1 {*/
-}
-{/*    font-size: 1.5rem;*/
-}
-{/*    font-weight: 700;*/
-}
-{/*    color: #f39c12;*/
-}
-{/*  }*/
-}
-{/*  .great-title {*/
-}
-{/*      font-size: 2rem;*/
-}
-{/*  }*/
-}
-{/*  .details span {*/
-}
-{/*    color: #bdbdbd;*/
-}
-{/*    margin-right: 1rem;*/
-}
-{/*  }*/
-}
-{/*  .details {*/
-}
-{/*    margin-bottom: 1rem;*/
-}
-{/*  }*/
-}
-{/*`}*/
-}
-{/*</style>*/
+        </div>
+      </div>
+  )
 }

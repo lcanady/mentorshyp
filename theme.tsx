@@ -144,7 +144,7 @@ const theme = {
                     fontSize: [null, 2, 3],
                     justifyContent: 'flex-end',
                     pr: '.5rem',
-                    bg: 'modes.dark.secondary',
+                    bg: 'modes.dark.highlight',
                 }
             }
         },
