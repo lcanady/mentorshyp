@@ -1,11 +1,14 @@
-import { v4 } from "uuid";
+import {v4} from 'uuid'
+import React from 'react'
 
 const RoomIndex = () => {
-  return <div></div>;
-};
+  return <div>&nbsp;</div>
+}
 
-RoomIndex.getInitialProps = ({ res }) => {
-  res.redirect("/room/" + v4());
-};
+RoomIndex.getInitialProps = ({res}) => {
+  res.redirect('/room/' + v4())
+}
 
-export default RoomIndex;
+export default RoomIndex
+
+

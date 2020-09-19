@@ -86,3 +86,4 @@ functions/tslint.json
 next-env.d.ts
 public/
 storage.rules
+!/server/indexCopy.ts

@@ -21,8 +21,7 @@ export default function BlogPage() {
             {posts.map((post) => {
               return (
                   //todo add additional elements
-                  [null,
-                    <Post key={post.link} post={post}/>]
+                    <Post key={post.link} post={post}/>
               )
             })}
           </main>

@@ -17,6 +17,9 @@ export default function Nav() {
           <a>Blog</a>
         </Link>
         <Search/>
+        <Link href={'/'}>
+          Video
+        </Link>
         <Button sx={{
           variant: 'components.search.button',
           bg: 'modes.dark.highlight',
@@ -24,9 +27,11 @@ export default function Nav() {
           color: 'modes.dark.text',
           textShadow: '.5px .5px 1px black',
         }}>
+
           <Link href={'/login'}>
             Log In
           </Link>
+
         </Button>
       </nav>
   )

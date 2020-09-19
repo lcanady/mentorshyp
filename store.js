@@ -1,12 +1,12 @@
-import React, {createContext, useEffect, useState} from 'react'
-import firebase from './firebase.config'
+// import React, {createContext, useEffect, useState} from 'react'
+// import firebase from './firebase.config'
+//
+// export const Context = createContext(null)
+//
+// export default function GlobalStateProvider({children}) {
 
-export const Context = createContext(null)
-
-export default function GlobalStateProvider({children}) {
-
-  const [data, setData] = useState(null)
-  const [loading, setLoading] = useState(true)
+  // const [data, setData] = useState(null)
+  // const [loading, setLoading] = useState(true)
 
   // useEffect(
   //     () => {
@@ -26,17 +26,17 @@ export default function GlobalStateProvider({children}) {
   //
   //     }, [loading]) //second @param is deps
 
-  const initialState = {
-    user: data,
-    loading,
-    setLoading
-  }
-
-  return (
-      <Context.Provider value={initialState}>
-        {children}
-      </Context.Provider>
-  )
-
-}
+//   const initialState = {
+//     user: data,
+//     loading,
+//     setLoading
+//   }
+//
+//   return (
+//       <Context.Provider value={initialState}>
+//         {children}
+//       </Context.Provider>
+//   )
+//
+// }
 
