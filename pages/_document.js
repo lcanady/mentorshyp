@@ -11,8 +11,7 @@ class MyDocument extends Document {
     return (
         <Html lang="en">
           <Head>
-            <link rel="shortcut icon" href="/public/favicon.ico"/>
-            <title>Mentorshyp</title>
+            <link rel='icon' href='data:,'/>
           </Head>
           <body>
           <Main/>

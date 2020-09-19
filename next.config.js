@@ -3,22 +3,6 @@ const withMDX = require('@next/mdx')({
 })
 
 
-module.exports = {
-  async redirects() {
-    return [
-      {
-        source: '/room/',
-        destination: '/room/:slug*',
-        permanent: true,
-      },
-    ]
-  },
-}
-
-
-
-
-
 // const nextEnv = require('next-env')
 // const dotenvLoad = require('dotenv-load')
 // dotenvLoad()

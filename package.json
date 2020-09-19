@@ -25,12 +25,17 @@
     "@theme-ui/components": "^0.3.1",
     "@theme-ui/preset-future": "^0.3.0",
     "@theme-ui/presets": "^0.3.0",
+    "dependency": "^0.0.1",
+    "diagnostics": "^2.0.2",
     "express": "^4.17.1",
     "firebase": "^7.20.0",
     "firebase-admin": "^9.2.0",
     "firebase-functions": "^3.11.0",
     "firebase-tools": "^8.10.0",
+    "lazy-cache": "^2.0.2",
     "next": "9.5.3",
+    "patch-package": "^6.2.2",
+    "peerjs": "^1.3.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "sass": "^1.26.10",
@@ -38,14 +43,14 @@
     "socket.io-client": "^2.3.0",
     "theme-ui": "^0.3.1",
     "uuid": "^8.3.0",
-    "peerjs": "^1.3.1"
+    "webpack-node-externals": "^2.5.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.2",
     "@types/node": "^14.10.1",
     "@types/react": "^16.9.49",
+    "next-env": "^1.1.1",
     "ts-node": "^8.6.2",
-    "typescript": "^4.0.2",
-    "next-env": "^1.1.1"
+    "typescript": "^4.0.2"
   }
 }

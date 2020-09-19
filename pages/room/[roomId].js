@@ -22,8 +22,12 @@ export default Room = () => {
       try {
 
         const Peer = (await import('peerjs')).default
-        const myPeer = new Peer()
+        const myPeer = new Peer([], {debug: 0})
         const peers = {}
+
+        console.log = console.warn = console.error = () => {
+        }
+        console.error('')
 
         const addVideoStream = (video, stream) => {
           video.srcObject = stream
@@ -40,6 +44,7 @@ export default Room = () => {
           peers[userId] = call
         }
 
+
         const stream = await navigator.mediaDevices.getUserMedia({
           video: true,
           audio: true
@@ -52,6 +57,7 @@ export default Room = () => {
             addVideoStream(remoteRef.current, userVideoStream)
           })
         })
+
 
         socket.emit('user-connected', (userId) => connectToUser(userId, stream))
         socket.emit('user-disconnected', (userId) => {
@@ -66,6 +72,10 @@ export default Room = () => {
     }
     permissions()
   }, [roomId])
+
+  console.log = console.warn = console.error = () => {
+  }
+  console.error('hide warnings hack, bitches')
 
   return (
       <div>
