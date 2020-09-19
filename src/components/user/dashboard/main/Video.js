@@ -1,15 +1,21 @@
 /** @jsx jsx */
 import {jsx} from 'theme-ui'
+import {Grid} from '@theme-ui/components'
 
 export default function Video() {
   return (
-      // <div sx={{variant: 'layout.dashboard'}}>
-      //   <div sx={{variant: 'layout.main'}}>
+      <>
+        <Grid
+          columns={[2, '3fr 1fr']}
+        sx={{
+          bg:'red',
+        }}
+        >
           <main sx={{variant: 'components.main.video'}}>
-              <h1>Video Placeholder</h1>
+            <h1>Video Placeholder</h1>
           </main>
-      //   </div>
-      // </div>
+        </Grid>
+      </>
   )
 }
 

@@ -8,11 +8,9 @@ const nextApp = next({dev})
 const nextHandler = nextApp.getRequestHandler()
 let port = process.env.PORT || 3000
 
-daFaq |> nextApp.prepare().then
-
-function daFaq() {
-  return app.get('*', (req, res) => nextHandler(req, res))
-}
+nextApp.prepare().then(() => app.get('*', (req, res) => {
+  return nextHandler(req, res)
+}))
 
 io.on('connection', (socket) => {
   socket.on('join-room', (roomId, userId) => {
