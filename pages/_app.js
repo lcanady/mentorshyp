@@ -1,18 +1,18 @@
 /** @jsx jsx */
-import {jsx} from 'theme-ui'
+import { jsx } from "theme-ui";
 // noinspection ES6CheckImport
-import {ThemeProvider} from 'theme-ui'
-import theme from '../theme'
-// import GlobalStateProvider from '../store'
+import { ThemeProvider } from "theme-ui";
+import theme from "../theme";
+import GlobalStateProvider from "../store";
 
-export default function MyApp({Component, pageProps}) {
+export default function MyApp({ Component, pageProps }) {
   return (
-      // <GlobalStateProvider>
+    <GlobalStateProvider>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
       </ThemeProvider>
-      // </GlobalStateProvider>
-  )
+    </GlobalStateProvider>
+  );
 }
 
 // useEffect(() => {

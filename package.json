@@ -3,22 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "ts-node --project tsconfig.server.json server/index.ts",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",
-    "@fortawesome/fontawesome-pro": "^5.14.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-regular-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/pro-duotone-svg-icons": "^5.14.0",
-    "@fortawesome/pro-light-svg-icons": "^5.14.0",
-    "@fortawesome/pro-regular-svg-icons": "^5.14.0",
-    "@fortawesome/pro-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
     "@mdx-js/loader": "^1.6.17",
     "@mdx-js/react": "^1.6.17",
     "@next/mdx": "^9.5.3",
